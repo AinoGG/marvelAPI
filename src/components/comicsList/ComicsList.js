@@ -37,7 +37,7 @@ const ComicsList = () => {
         setComicsEnded(comicsEnded => ended)
     }
 
-    const itemRef = useRef([]);
+   
 
     const renderItems = (arr) => {
         const items = arr.map((item, i) => {
