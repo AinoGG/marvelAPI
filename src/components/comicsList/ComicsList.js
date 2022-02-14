@@ -27,13 +27,13 @@ const ComicsList = () => {
 
     const onComicsListLoaded = (newComicsList) => {
         let ended = false;
-        if(newComicsList.length < 9) {
+        if(newComicsList.length < 8) {
             ended = true;
         }
 
         setComicsList(comicsList => [...comicsList, ...newComicsList]);
         setNewItemLoading(newItemLoading => false);
-        setOffset(offset => offset + 9);
+        setOffset(offset => offset + 8);
         setComicsEnded(comicsEnded => ended)
     }
 
